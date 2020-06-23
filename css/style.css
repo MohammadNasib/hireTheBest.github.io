@@ -48,7 +48,7 @@ i {
 .navbar:before {
   content: "";
   position: absolute;
-  max-width: 100%;
+  width: 100%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -504,6 +504,10 @@ form button:hover {
     margin-bottom: 25px;
   }
 
+  .features p {
+    word-break: break-all;
+  }
+
   /* ----- pricing and happy-clients ------ */
 
   .pricing,
@@ -559,7 +563,7 @@ form button:hover {
   }
 
   .features p {
-    overflow:hidden;
+    word-break: break-all;
   }
 
   /* ----- pricing and happy-clients ------ */
@@ -600,6 +604,10 @@ form button:hover {
 
   .progress {
     width: 36rem;
+  }
+
+  .features p {
+    word-break: break-all;
   }
 
   /* -----------pricing ------------ */
