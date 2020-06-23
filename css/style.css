@@ -600,8 +600,12 @@ form button:hover {
 /* ----------------------------------------- */
 
 @media only screen and (min-width: 769px) and (max-width: 990px) {
-  /* -------- services --------- */
+  /* ---- navigation ----- */
+  .nav-item {
+    text-align: center !important;
+  }
 
+  /* -------- services --------- */
   .progress {
     width: 36rem;
   }
