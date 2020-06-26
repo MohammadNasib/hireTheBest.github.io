@@ -1,0 +1,251 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS variables */
+
+:root {
+  --nav-height: 59px;
+}
+
+/* logo and image */
+
+#logo {
+  margin: 7px 17px;
+}
+
+#logo img {
+  height: 95px;
+  margin: 5px 23px;
+}
+
+/* navigation var */
+
+#navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: sticky;
+  top: 0px;
+}
+
+/* ul */
+#navbar ul {
+  display: flex;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 95%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 4px 17px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: #65e830;
+  border-radius: 25px;
+}
+
+/* home section */
+
+#home {
+  height: 531px;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 140px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 115px;
+}
+
+#home::before {
+  content: "";
+  background: url("food_website/bg3.jpg") no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 115%;
+  z-index: -4;
+  opacity: 2.89;
+}
+
+#home p {
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(36, 34, 34);
+  padding: 5px 87px;
+}
+
+#home h1 {
+  text-align: center;
+}
+
+/* servicess */
+
+#services {
+  display: flex;
+  margin-bottom: 85px;
+}
+
+#services .box {
+  border: 3px solid red;
+  margin: 7px;
+  border-radius: 15px;
+  background-color: rgb(247, 223, 223);
+}
+#services .box img {
+  height: 151px;
+  display: block;
+  margin: 15px auto;
+}
+#services .box p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 0.9rem;
+  padding: 15px;
+}
+
+/* client section */
+
+#client-section {
+  position: relative;
+  margin-bottom: 85px;
+}
+
+#client-section::before {
+  content: "";
+  background: url("food_website/bg4.jpg") center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 109%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  margin: 30px 52px;
+}
+
+#clients img {
+  height: 125px;
+}
+
+/* contact section */
+
+#contact {
+  position: relative;
+  padding-bottom: 35px;
+}
+
+#contact h1 {
+  color: white;
+  padding-bottom: 15px;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-box form {
+  width: 50%;
+}
+
+#contact-box label {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#contact-box textarea,
+#contact-box input {
+  width: 100%;
+  padding: 0.5rem;
+  resize: none;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.1rem;
+}
+
+#contact-box ::placeholder {
+  color: rgb(51, 53, 50);
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  background: rgb(70, 72, 78);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* opacity: 0.3; */
+}
+
+footer {
+  background: rgb(167, 170, 177);
+}
+
+/* utility class */
+
+.h-primary {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.7rem;
+  padding: 9px;
+  /* margin: 7px; */
+  text-align: center;
+}
+.h-secondary {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.7rem;
+  padding: 11px;
+}
+
+.btn {
+  padding: 1px 9px;
+  border: 3px solid black;
+  background-color: rgb(144, 228, 133);
+  color: black;
+  margin: 17px;
+  font-size: 1.1rem;
+  border-radius: 11px;
+}
+
+.btn:hover {
+  background-color: rgb(72, 207, 90);
+  color: black;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
